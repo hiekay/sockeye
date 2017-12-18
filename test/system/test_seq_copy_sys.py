@@ -90,7 +90,7 @@ _SEED_DEV = 17
      " --cnn-num-hidden 32 --cnn-positional-embedding-type fixed"
      " --checkpoint-frequency 1000 --optimizer adam --initial-learning-rate 0.001",
      "--beam-size 1",
-     1.02,
+     1.04,
      0.98)
 ])
 def test_seq_copy(name, train_params, translate_params, perplexity_thresh, bleu_thresh):
