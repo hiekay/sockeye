@@ -37,8 +37,8 @@ _SEED_DEV = 17
      " --rnn-dropout-states 0.0:0.1 --embed-dropout 0.1:0.0 --max-updates 4000 --weight-normalization"
      " --gradient-clipping-type norm --gradient-clipping-threshold 10",
      "--beam-size 5 ",
-     1.02,
-     0.99),
+     1.03,
+     0.98),
     ("Copy:chunking",
      "--encoder rnn --num-layers 1 --rnn-cell-type lstm --rnn-num-hidden 64 --num-embed 32 --rnn-attention-type mlp"
      " --rnn-attention-num-hidden 32 --batch-size 16 --loss cross-entropy --optimized-metric perplexity"
@@ -169,8 +169,8 @@ def test_seq_copy(name, train_params, translate_params, perplexity_thresh, bleu_
      " --cnn-num-hidden 32 --cnn-positional-embedding-type fixed"
      " --checkpoint-frequency 1000 --optimizer adam --initial-learning-rate 0.001",
      "--beam-size 1",
-     1.03,
-     0.95)
+     1.05,
+     0.94)
 ])
 def test_seq_sort(name, train_params, translate_params, perplexity_thresh, bleu_thresh):
     """Task: sort short sequences of digits"""
