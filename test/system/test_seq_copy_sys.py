@@ -86,7 +86,7 @@ _SEED_DEV = 17
      0.99),
     ("Copy:cnn:cnn",
      "--encoder cnn --decoder cnn "
-     " --batch-size 16 --num-layers 3 --max-updates 6000"
+     " --batch-size 16 --num-layers 3 --max-updates 4000"
      " --cnn-num-hidden 32 --cnn-positional-embedding-type fixed"
      " --checkpoint-frequency 1000 --optimizer adam --initial-learning-rate 0.001",
      "--beam-size 1",
@@ -170,7 +170,7 @@ def test_seq_copy(name, train_params, translate_params, perplexity_thresh, bleu_
      " --checkpoint-frequency 1000 --optimizer adam --initial-learning-rate 0.001",
      "--beam-size 1",
      1.03,
-     0.96)
+     0.95)
 ])
 def test_seq_sort(name, train_params, translate_params, perplexity_thresh, bleu_thresh):
     """Task: sort short sequences of digits"""
